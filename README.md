@@ -1,7 +1,8 @@
 # Swiggy-TechStein-2018
 Swiggy TechStein Open Hackathon 2018
-Present day swiggy reccomendations are restaurand based. But food items available in any restaurant is so diverse that it does not look like a reccomendation from viewpoint of user taste. For example, if I like chinese food, I would like to be recommended more variety in chinese food from those restaurants which have been liked by many users having similar taste.
-Developing a food recommendation engine has been challenging given the sparsity isues. Ww wanted to leverage large datasets available with swiggy to build a fast and efficient model.
+Present day swiggy reccomendations are restaurand based. But food items available in any restaurant is so diverse that it does not look like a reccomendation from viewpoint of user taste. For example, if I like chinese food, I would like to be recommended more variety in chinese food from those restaurants which have been liked by many users having similar taste like me.
+
+Developing a food recommendation engine has been challenging given the sparsity isues. We wanted to leverage large datasets available with swiggy to build a fast and efficient model.
 
 
 we built a dish based food recommendation rather than restaurant based recommendation system. 
