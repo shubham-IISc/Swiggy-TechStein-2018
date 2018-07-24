@@ -5,18 +5,17 @@ Present day swiggy reccomendations are restaurand based. But food items availabl
 
 For example, if I like chinese food, I would like to be recommended more variety in chinese food from those restaurants which have been liked by many users having similar taste like me.
 
-Developing a food recommendation engine has been challenging given the sparsity isues. We wanted to leverage large datasets available with swiggy to build a fast and efficient model.
+Developing a food recommendation engine has been challenging given the sparsity isues. We wanted to leverage large datasets available with swiggy to build a fast and an efficient model.
 
-With no ratings data provided, we wanted to do collaboration filtering with implicit feedback being number of times user has ordered that particular item. We experimented with several models like user-user similarity based, SVD++ and finally came across the following paper **Hu, Koren et al "Collaborative Filtering for Implicit Feedback Datasets"**. Paper describes that implicit user observations should be transformed into two paired magnitudes: preferences and confidence levels.  In other words, for each
-user-item pair, we derive from the input data an estimate to whether the user would like or dislike the item (“preference”) and couple this estimate with a confidence level. 
+With no ratings data provided, we wanted to do collaboration filtering with implicit feedback being number of times user has ordered that particular item. We experimented with several models like user-user similarity based, SVD++ (generated similar recommendations for all users) and finally came across the following paper **Hu, Koren et al "Collaborative Filtering for Implicit Feedback Datasets"**. Paper describes that implicit user observations should be transformed into two paired magnitudes: preferences and confidence levels.  In other words, for each user-item pair, we derive from the input data an estimate to whether the user would like or dislike the item (“preference”) and couple this estimate with a confidence level. 
 
 We finally went on implementing this model and obtained AUC ROC score of .85 while predicting if user would order an item or not for the test set. Also training time for 100 iterations is less than a minute even with more than 1 million order-id's provided in the training set. All the recommendations are generated at run-time with negligible latency requirement.
 
-Details about the dataset and results of preporcessing to feed into our model has been shown in the presentation. Following are some of the screenshots of the interface developed by us.
+Details about the dataset and results of preporcessing to feed into our model has been shown in the presentation. Following are some of the screenshots of the interface developed by us:
 
-**NOTE**:Each item-id mentioned along with a image is unique to a restaurant and item.
+**NOTE**:Each item-id mentioned along with a image is unique to a restaurant and item. Exact name of restaurant and item were not disclosed to us by swiggy.
 
-some recommendation based on previous order
+
 
 login page
 ![swiggy login-1](https://user-images.githubusercontent.com/32159487/42841529-feafad94-8a27-11e8-88cc-90a15a49bed4.png)
