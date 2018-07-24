@@ -11,7 +11,7 @@ With no ratings data provided, we wanted to do collaboration filtering with impl
 
 We finally went on implementing this suggested ALS model and obtained AUC-ROC score of .85 while predicting if user would order an item or not for the test set. Also training time for 100 iterations is less than a minute even with more than 1 million order-id's provided in the training set. All the recommendations are generated at run-time with negligible latency requirement.
 
-Details about the dataset and results of preporcessing to feed into our model has been shown in the presentation. Following are some of the screenshots of the interface developed by us:
+Details about the dataset and results of preprocessing to feed into our model has been shown in the presentation as well as in jupyter notebook codes. Following are some of the screenshots of the interface developed by us:
 
 **NOTE**:Each item-id mentioned along with a image is unique to a restaurant and item. Exact name of restaurant and item were not disclosed to us by swiggy.
 
