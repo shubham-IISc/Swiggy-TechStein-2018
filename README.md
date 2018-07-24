@@ -1,7 +1,7 @@
 # Swiggy-TechStein-2018
 **Swiggy TechStein Open Hackathon 2018**
 
-Present day swiggy reccomendations are restaurand based. But food items available in any recommended restaurant is so diverse that it does not look like a recommendation from pespective of user's taste.
+Present day swiggy reccomendations are restaurand based. But food items available in any recommended restaurant is so diverse that it does not look like a recommendation from perspective of user's taste.
 
 For example, if I like chinese food, I would like to be recommended more variety in chinese food from those restaurants which have been liked by many users having similar taste like me.
 
