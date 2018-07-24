@@ -8,8 +8,12 @@ For example, if I like chinese food, I would like to be recommended more variety
 Developing a food recommendation engine has been challenging given the sparsity isues. We wanted to leverage large datasets available with swiggy to build a fast and efficient model.
 
 With no ratings data provided, we wanted to do collaboration filtering with implicit feedback being number of times user has ordered that particular item. We experimented with several models like user-user similarity based, SVD++ and finally came across the following paper **Hu, Koren et al "Collaborative Filtering for Implicit Feedback Datasets"**. Paper describes that implicit user observations should be transformed into two paired magnitudes: preferences and confidence levels.  In other words, for each
-user-item pair, we derive from the input data an estimate to whether the user would like or dislike the item (“preference”) and couple this estimate with a confidence level. More details can be found in the presentation attached or in the paper mentioned above. We finally went on implementing this model and obtained AUC ROC score of .85 while predicting if a user would order an item or not. Also training time for 100 iterations is less than a minute even with more than 1 million order-ids provided in the training set. All the recommendations are generated at run-time with negligible latency requirement.
-Following are some of the screenshots of the interface developed by us.
+user-item pair, we derive from the input data an estimate to whether the user would like or dislike the item (“preference”) and couple this estimate with a confidence level. 
+
+We finally went on implementing this model and obtained AUC ROC score of .85 while predicting if user would order an item or not for the test set. Also training time for 100 iterations is less than a minute even with more than 1 million order-id's provided in the training set. All the recommendations are generated at run-time with negligible latency requirement.
+
+Details about the dataset and results of preporcessing to feed into our model has been shown in the presentation. Following are some of the screenshots of the interface developed by us.
+
 **NOTE**:Each item-id mentioned along with a image is unique to a restaurant and item.
 
 some recommendation based on previous order
