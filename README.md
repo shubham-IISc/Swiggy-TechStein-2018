@@ -13,7 +13,7 @@ We finally went on implementing this suggested ALS model and obtained AUC-ROC sc
 
 Details about the dataset and results of preprocessing to feed into our model has been shown in the presentation as well as in jupyter notebook codes. Following are some of the screenshots of the interface developed by us:
 
-**NOTE**:Each item-id mentioned along with a image is unique to a restaurant and an item. Exact name of restaurant and item were not disclosed to us by swiggy.
+**NOTE**:Each item-id mentioned along with a image is unique to a restaurant and an item. Exact name of restaurant and item corresponding to given item-id were not disclosed to us by swiggy.
 
 
 
